@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Actor Profile</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="data:image/jpeg;base64,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" alt="Actor Image" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <h2>Name:Vijay Devarakonda</h2>
+                <h3>Birthdate: 9 may 1989 </h3>
+                <h3>Birthplace: Hyderabad</h3>
+                <h3>Occupation: Actor</h3>
+                <h3>Known For:pelli choopulu (2016)</h3>
+                <h3>Filmography:</h3>
+                <ul>
+                    <li>Arjun Reddy (2017)</li>
+                    <li>Mahanati (2018)</li>
+                    <li>Geetha Govindam (2018)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Actor Profile</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="data:image/jpeg;base64,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" alt="Actor Image" class="image-fluid">
+                        </div>
+            <div class="col-md-8">
+                <h2>Name:Pawan kalyan</h2>
+                <h3>Birthdate: 2 sep 1971 </h3>
+                <h3>Birthplace: Bapatala</h3>
+                <h3>Occupation: Actor</h3>
+                <h3>Known For:Akkada ammayi ikkada abbayi (1996)</h3>
+                <h3>Filmography:</h3>
+                <ul>
+                    <li>Gokulamalo sita(1997)</li>
+                    <li>Suswagatham(1998)</li>
+                    <li>Thammudu (1999)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center">Actor Profile</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQbBJZS85RSzhHHKGEAjMrODOxOMInH1u2A&usqp=CAU"  alt="Actor image" class="image-fluid">
+            </div>
+            <div class="col-md-8">
+                <h2>Name:Rajini kanth</h2>
+                <h3>Birthdate: 12 Dec 1950 </h3>
+                <h3>Birthplace: Bangalore</h3>
+                <h3>Occupation: Actor</h3>
+                <h3>Known For: S.P.Muthuraman's Bhuvana Oru Kelvi Kuri (1977)</h3>
+                <h3>Filmography:</h3>
+                <ul>
+                    <li>Billa(1980)</li>
+                    <li>Don(1978)</li>
+                    <li>Moondru Mugam(1982)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="text-center">Actor Profile</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-B4h9ZtoCZgiAVKuu85-kWpBzVm3Eps6aLsuuL2KLQPDfXS9MJyR4rUV_xrh6k2xeMM&usqp=CAU"  alt="Actor image" class="image-fluid">
+                </div>
+                <div class="col-md-8">
+                    <h2>Name:Sai Dharma Tej </h2>
+                    <h3>Birthdate: 15 oct 1986  </h3>
+                    <h3>Birthplace: Hyderabad Andhra Pradesh</h3>
+                    <h3>Occupation: Actor</h3>
+                    <h3>Known For: Subramanyam for sale (2015)</h3>
+                    <h3>Filmography:</h3>
+                    <ul>
+                        <li>Supreme(2016)</li>
+                        <li>Chitralahari(2019)</li>
+                        <li>Prathi roju pandage(2019)</li>
+                    </ul>
+                </div>
+            </div>
+<div class="container">
+    <h1 class="text-center">Actor Profile</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxLTR4uIobw7EYeLkfpiAhYFOVzyjzVxz6fA&usqp=CAU"  alt="Actor image" class="image-fluid">
+        </div>
+        <div class="col-md-8">
+            <h2>Name:Nikhil Siddhartha </h2>
+            <h3>Birthdate:  1 june 1985 </h3>
+            <h3>Birthplace: Hyderabad Andhra Pradesh</h3>
+            <h3>Occupation: Actor</h3>
+            <h3>Known For: Happy Days (2007)</h3>
+            <h3>Filmography:</h3>
+            <ul>
+                <li>Swamy Ra Ra(2013)</li>
+                <li>Karthikeya(2014)</li>
+                <li>Kesava(2017)</li>
+            </ul>
+</body>
+</html>
